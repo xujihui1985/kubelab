@@ -25,7 +25,8 @@ kubelab::provision::controller() {
 
 kubelab::provision::controller::rolebinding() {
   gcloud compute ssh controller-0 \
-	--command "kubectl create clusterrolebinding root-cluster-admin-binding --clusterrole=cluster-admin --user=admin"
+	--command "kubectl create clusterrolebinding root-cluster-admin-binding --clusterrole=cluster-admin --user=admin &&
+	 kubectl create clusterrolebinding admin-cluster-admin-binding --clusterrole=cluster-admin --user=kubelab"
 }
 
 kubelab::provision::controllers() {

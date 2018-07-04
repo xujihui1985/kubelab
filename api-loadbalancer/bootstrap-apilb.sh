@@ -53,12 +53,14 @@ kubelab::provision::createlb() {
 
 kubelab::provision::lb::verify() {
   echo "get public address"
+  local kubelab_root="$(dirname ${BASH_SOURCE})/.."
+  local kubelab_cert="$kubelab_root/cert"
   local public_address="$(gcloud compute addresses describe kubelab \
     --region $(gcloud config get-value compute/region) \
     --format 'value(address)')"
-  curl --cacert ca.pem https://${KUBERNETES_PUBLIC_ADDRESS}:6443/version
+  curl --cacert $kubelab_cert/ca.pem https://${public_address}:6443/version
 }
 
-kubelab::provision::apilbs
-kubelab::provision::createlb
+#kubelab::provision::apilbs
+#kubelab::provision::createlb
 kubelab::provision::lb::verify
