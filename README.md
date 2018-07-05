@@ -6,7 +6,7 @@
 
 - Sign up for gcloud https://cloud.google.com/ you will get $300 credits
 - download gcloud sdk from https://cloud.google.com/sdk/gcloud/
-- setup gcloud choose a zone that close to you geographical
+- setup gcloud choose a zone that close to you geographically
 - install golang (for cfssl) from https://golang.org/dl/ and setup go bin to your path
 - install cfssl `go get -u github.com/cloudflare/cfssl/cmd/...`
 
