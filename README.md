@@ -115,7 +115,7 @@ kubectl --kubeconfig kubelab.kubeconfig run nginx --image=nginx
 POD_NAME=$(kubectl --kubeconfig kubelab.kubeconfig get pods -l run=nginx -o jsonpath="{.items[0].metadata.name}")
 
 # port forward
-kubectl port-forward $POD_NAME 8080:80
+kubectl --kubeconfig kubelab.kubeconfig port-forward $POD_NAME 8080:80
 
 open http://127.0.0.1:8080
 
