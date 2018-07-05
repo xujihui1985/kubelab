@@ -28,7 +28,7 @@ metadata:
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: system:kube-apiserver-to.kubelet
+  name: system:kube-apiserver-to-kubelet
 subjects:
   - apiGroup: rbac.authorization.k8s.io
     kind: User

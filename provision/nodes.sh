@@ -18,6 +18,7 @@ for i in 0 1 2; do
 	--async \
 	--boot-disk-size 200GB \
 	--can-ip-forward \
+	--preemptible \
 	--image-family ubuntu-1804-lts \
 	--image-project ubuntu-os-cloud \
 	--machine-type n1-standard-1 \
@@ -34,6 +35,7 @@ for i in 0 1 2; do
 	--async \
 	--boot-disk-size 200GB \
 	--can-ip-forward \
+	--preemptible \
 	--image-family ubuntu-1804-lts \
 	--image-project ubuntu-os-cloud \
 	--machine-type n1-standard-1 \

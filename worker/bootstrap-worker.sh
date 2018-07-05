@@ -44,4 +44,4 @@ kubelab::provision::worker::setup() {
   done
 }
 
-kubelab::provision::worker::setup
+kubelab::provision::worker::setupworker "worker-2"
