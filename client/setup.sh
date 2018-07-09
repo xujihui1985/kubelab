@@ -15,6 +15,7 @@ kubectl config set-cluster kubelab \
 kubectl config set-credentials admin \
   --client-certificate=$KUBELAB_CERT/admin.pem \
   --client-key=$KUBELAB_CERT/admin-key.pem \
+  --embed-certs=true \
   --kubeconfig=kubelab.kubeconfig
 
 kubectl config set-context kubelab \

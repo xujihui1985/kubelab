@@ -3,3 +3,4 @@ cert/*.pem
 cert/*.csr
 kubeconfig/*.kubeconfig
 client/*.kubeconfig
+account.json
